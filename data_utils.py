@@ -41,17 +41,17 @@ def load_drivers():
 
 def load_circuits():
     """Load and process the circuits data."""
-    return load_csv('./data/venues.csv', ['circuitRef', 'lat', 'lng', 'alt', 'url',
-                                            'location', 'country'])
+    return load_csv('./data/venues.csv', ['venue','more'])
 
 
 def load_races():
     """Load and process the races data."""
-    df = load_csv('./data/races.csv', ['year', 'round', 'name', 'time', 'fp2_time',
-                                       'fp3_time', 'quali_time', 'url', 'fp1_date',
-                                       'fp1_time', 'fp2_date', 'fp3_date',
-                                       'quali_date', 'sprint_date', 'sprint_time'])
-    df['date'] = pd.to_datetime(df['date'])
+    df = load_csv('./data/races.csv')
+    print(df)
+    #print(df['date'])
+    df['date'] = pd.to_datetime(df['date'], format='mixed')
+
+    # Extract year, month, and day
     df['year'] = df['date'].dt.year
     df['month'] = df['date'].dt.month
     df['day'] = df['date'].dt.day
@@ -98,7 +98,7 @@ def load_and_process_data():
     drivers_df = load_drivers()
     circuits_df = load_circuits()
     races_df = load_races()
-    races_df = races_df.merge(circuits_df, on='circuitId').drop(columns=['circuitId'])
+    races_df = races_df.merge(circuits_df, on='venue').drop(columns=['venue'])
     constructors_df = load_constructors()
     qualifying_df = load_qualifying()
     results_df = load_results()

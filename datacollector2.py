@@ -24,13 +24,13 @@ for row in regatta_array:
     if("showcase" in row[4].lower() or "cross regional" in row[4].lower() or "national" in row[4].lower()):
         if("Team" not in row[5] and ("Official" in row[7] or "nevermind" in row[5])):
             if("Combined" in row[5]):
-                regatta_array2.append([row[0], row[1], 1, True, row[3], row[4], row[6], row[7]])
+                regatta_array2.append([row[0], row[1], 1, True] + row[3:])
             elif("1" in row[5]): 
-                regatta_array2.append([row[0], row[1], 1, False, row[3], row[4], row[6], row[7]])
+                regatta_array2.append([row[0], row[1], 1, False] + row[3:])
             elif("2" in row[5]):
-                regatta_array2.append([row[0], row[1], 2, False, row[3], row[4], row[6], row[7]])
+                regatta_array2.append([row[0], row[1], 2, False] + row[3:])
             elif("3" in row[5]):
-                regatta_array2.append([row[0], row[1], 2, False, row[3], row[4], row[6], row[7]])
+                regatta_array2.append([row[0], row[1], 2, False] + row[3:])
             elif("Singlehanded" in row[5]):
                 None
                 #print("singlehanded")

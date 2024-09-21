@@ -117,7 +117,7 @@ def convert_to_place(string_val,races):
     except: 
         return races+1
 
-race_data = [["raceid", "year", "race", "division", "combined", "regatta","sailors"]]
+race_data = [["raceid", "year", "race", "division", "combined", "regatta", "sailors"]]
 for i in range(36):
     race_data[0].append(i+1)
 
@@ -171,7 +171,7 @@ for regatta_data in regatta_result_set:
             if(sailors[index] in team_set):
                 team_index = team_set.index(sailors[index])
                 if(sailors[index] == sailors[index+1]):
-                    print(sailors[index-1:index+1])
+                    #print(sailors[index-1:index+1])
                     team_set[team_index] = [sailors[index], sailors[index]]
                 else: 
                     team_set[team_index] = [team_set[team_index], sailors[index-1]]
@@ -226,7 +226,7 @@ for regatta_data in regatta_result_set:
         print("Divisions: " + str(divisions))
         print("Races: " + str(race_number))
         print(str(combined))
-        print(regatta_results)
+        #print(regatta_results)
         #sample regatta_results: 
         # [['Eagles', ['A', '1', '8', '3', '3', '1', '9', '4', '2', '1', '1', '2', '2'], 
         # ['B', '9', '1', '14', '1', '8', '1', '6', '12', '1', '4', '1', '4'], 
@@ -234,7 +234,7 @@ for regatta_data in regatta_result_set:
         race_results = []
 
         try: 
-            print(team_set)
+            #print(team_set)
             for team in range(len(team_set)):
                 for race in range(race_number):
                     if(not combined):
@@ -281,9 +281,9 @@ for regatta_data in regatta_result_set:
                     #print(new_race)
 
 
-                    cur_race = [race_id, year, division + 1, combined, regatta, racenum, len(cur_race)] + [race[1] for race in new_race]
+                    cur_race = [race_id, year, regatta_data[3],regatta_data[4],regatta_data[6], division + 1, combined, regatta, racenum, len(cur_race)] + [race[1] for race in new_race]
 
-                    if(cur_race[6] > 0):
+                    if(cur_race[9] > 0):
                         race_data.append(cur_race)
                         race_id = race_id + 1
                         racenum += 1
@@ -292,7 +292,7 @@ for regatta_data in regatta_result_set:
             print(str(regatta) + " failed 2")
             failed.append(str(regatta) + "failed 2" + year)
 
-with open('testracedata.csv', mode="w") as racefile: 
+with open('data/testracedata.csv', mode="w") as racefile: 
     race_writer = csv.writer(racefile)
     race_writer.writerows(race_data)
 
