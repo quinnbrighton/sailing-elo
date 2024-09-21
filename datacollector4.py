@@ -196,15 +196,6 @@ for year in ["f18/", "f19/", "f21/", "f22/", "f23/","f24/"]:
     #del regatta_result_set[2:]
     #regatta_result_set = ["mt-hope-bay-invite"]
 
-    for element in regatta_result_set:
-        if("laser" in element or "match" in element or "team" in element or "2v2" in element or "lane" in element or "dave" in element or "single" in element or "vs" in element
-        or "shields" in element or "pine" in element or "mcmillan" in element or "kennedy" in element or "offshore" in element or "sloop" in element):
-            print("deleted: " + element)
-            failed.append("deleted: " + element + year)
-        else:
-            regatta_result_set2.append(element)
-    regatta_result_set = regatta_result_set2
-
     #index of school names in web-scraped list of sailors
     sailor_index = []
     for regatta in regatta_result_set:

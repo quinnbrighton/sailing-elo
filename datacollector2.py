@@ -10,24 +10,30 @@ import csv
 from bs4 import BeautifulSoup
 
 
-with open("regattas23-24.csv", 'r') as csvfile:
+with open("all-regattainfo.csv", 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
         regatta_array.append(row)
 
 #print(regatta_array)
+#sample
+
+#Week 18,rose-bowl,Rose Bowl,Southern Cal,NOT ALLOWED  Interconference,2 Divisions,01/02/2016,Official,
 
 for row in regatta_array:
-    if(row[4] == 'Showcase Regatta' or row[4] == 'Cross Regional Regatta'):
-        if("FJ" in row[5] or "420" in row[5]):
-            if("Combined" in row[6]):
-                regatta_array2.append([row[0], row[1], 1, True])
-            elif("1" in row[6]): 
-                regatta_array2.append([row[0], row[1], 1, False])
-            elif("2" in row[6]):
-                regatta_array2.append([row[0], row[1], 2, False])
-            elif("3" in row[6]):
-                regatta_array2.append([row[0], row[1], 2, False])
+    if("showcase" in row[4].lower() or "cross regional" in row[4].lower() or "national" in row[4].lower()):
+        if("Team" not in row[5] and ("Official" in row[7] or "nevermind" in row[5])):
+            if("Combined" in row[5]):
+                regatta_array2.append([row[0], row[1], 1, True, row[3], row[4], row[6], row[7]])
+            elif("1" in row[5]): 
+                regatta_array2.append([row[0], row[1], 1, False, row[3], row[4], row[6], row[7]])
+            elif("2" in row[5]):
+                regatta_array2.append([row[0], row[1], 2, False, row[3], row[4], row[6], row[7]])
+            elif("3" in row[5]):
+                regatta_array2.append([row[0], row[1], 2, False, row[3], row[4], row[6], row[7]])
+            elif("Singlehanded" in row[5]):
+                None
+                #print("singlehanded")
             else: 
                 print(row)
 

@@ -51,17 +51,8 @@ for year in years[::-1]:
         print(final_array[index])
         if("week" in final_array[index-1].lower()):
             lastblank = final_array[index-1]
-        final_array2.append([lastblank]+[regatta_dict[value]] + final_array[index:index+7])
+        final_array2.append([lastblank]+[regatta_dict[value]] + final_array[index:index+6]+[year])
 
-    '''
-    for regatta[0] in regatta_result_set:
-        page = requests.get(URL + year + regatta[0])
-        sailor_soup = BeautifulSoup(page.content, "html.parser")
-        regatta_info = sailor_soup.find_all(class_="page-info-value")
-        print(regatta[0] + " is a " + regatta_info[2].text)
-        print(regatta_info)
-        regatta_info2.append([year, regatta, regatta_info[0].text, regatta_info[1].text, regatta_info[2].text, regatta_info[3].text, regatta_info[4].text, regatta[0]])
-'''
 final_array2.sort(key=lambda x: x[6])
 
 with open('all-regattainfo.csv', mode="w") as racefile: 
