@@ -40,47 +40,55 @@ def get_sailors(divisions, div, race, names):
         start_index = 0
     try: 
         namelist = names[start_index+2:end_index]
+        print(namelist)
     except: 
         namelist = names[start_index+2:]
-    new_namelist = []
-    if(len(namelist) == 2):
-        return namelist
-    else: 
-        for index in range(len(namelist)):
-            if(is_first_char_integer(namelist[index]) and index > 0):
-                if("," in namelist[index] or "-" in namelist[index]):
-                    allcommas = namelist[index].split(',')
-                    for comma in allcommas: 
-                        if("-" in comma):
-                            twoints = comma.partition('-')
-                            if(race in range(int(twoints[0]),int(twoints[2])+1)):
-                                new_namelist.append(namelist[index-1])
-                        try: 
-                            if(race == int(comma)):
-                                new_namelist.append(namelist[index-1])
-                        except: 
-                            comma = 1
-                elif(race == int(namelist[index])):
-                    new_namelist.append(namelist[index-1])
-            elif(index > 0):
-                if not is_first_char_integer(namelist[index-1]):
-                    new_namelist.append(namelist[index-1])
-            if('Reserves' in namelist[index]):
-                return new_namelist
-            if(not is_first_char_integer(namelist[index]) and index == len(namelist) - 1):
-                new_namelist.append(namelist[index])
-        if(len(new_namelist) != 2 and len(new_namelist) != 0):
-            print(names)
-            print(regatta)
-            print(new_namelist)
-            print(namelist)
-            print(div)
-            print(race)
+        print(namelist)
 
-        return new_namelist
+    for i in range(len(namelist)):
+        if("*" == namelist[i][-1]):
+            namelist[i] = namelist[i][:-2]
+
+    new_namelist = []
+    #print(namelist)
+    for index in range(len(namelist)):
+        element = namelist[index]
+        if(is_first_char_integer(element) and index > 0):
+            allcommas = namelist[index].split(sep=',')
+            for comma in allcommas: 
+                if("-" in comma):
+                    twoints = comma.split(sep='-')
+                    #can delete next 3 lines once compiles
+                    if(len(twoints) != 2): 
+                        print([twoints, race, names])
+                        break
+                    if(race in range(int(twoints[0]),int(twoints[1])+1)):
+                        new_namelist.append(namelist[index-1])
+                else: 
+                    if(race == int(comma)):
+                        new_namelist.append(namelist[index-1])
+        elif(index > 0):
+            #if first char is a char (sailor name) + next index is not a number
+            if not is_first_char_integer(namelist[index-1]):
+                new_namelist.append(namelist[index-1])
+        if('reserve' in element.lower()):
+            return new_namelist
+        if(not is_first_char_integer(element) and index == len(namelist) - 1):
+            new_namelist.append(namelist[index])
+
+    if(len(new_namelist) != 2):
+        print(names)
+        print(regatta)
+        '''print(new_namelist)
+        print(namelist)
+        print(div)
+        print(race)'''
+        return []
+    
+    return new_namelist
+
                 
 def convert_race(results, divisions, combined, race_count):
-    #print(results)
     new_results = []
     if(not combined):
         for i in range(divisions):
@@ -100,11 +108,8 @@ def convert_race(results, divisions, combined, race_count):
             #print(element)
             new_results[0][element[1]-1].append([element[3], element[4]])
         
-    #print(new_results)
     return new_results
 
-    ## race results structure -> team, race, division, result, sailors
-    #results = convert_race(race_results, divisions, combined, race_number)
 
 def convert_to_place(string_val,races):
     try:
@@ -126,13 +131,15 @@ with open("all-regattainfo.csv", 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
         regatta_result_set.append(row)
-print(regatta_result_set)
+
+#print(regatta_result_set)
 
 for regatta_data in regatta_result_set:
-    print(regatta_data)
+    #print(regatta_data)
     year = regatta_data[8]
     regatta = regatta_data[1]
-    if("team" not in regatta_data[5].lower()):
+    if("team" not in regatta_data[5].lower() and "single" not in regatta_data[5].lower() and "Official" == regatta_data[-2]
+    and ("showcase" in regatta_data[4].lower() or "cross regional" in regatta_data[4].lower() or "national" in regatta_data[4].lower())):
         print(regatta)
         print(year)
         regatta_set = []
@@ -159,29 +166,38 @@ for regatta_data in regatta_result_set:
             sailor_list[sailor_index[-1]] = "removed"
 
         sailors = sailors.split("\n")
+        
         for index in range(len(sailors)):
             if(sailors[index] in team_set):
                 team_index = team_set.index(sailors[index])
-                team_set[team_index] = [team_set[team_index], sailors[index-1]]
+                if(sailors[index] == sailors[index+1]):
+                    print(sailors[index-1:index+1])
+                    team_set[team_index] = [sailors[index], sailors[index]]
+                else: 
+                    team_set[team_index] = [team_set[team_index], sailors[index-1]]
 
         sailor_index.append(len(sailor_list)-1)
         sailors = sailor_soup.contents[1].get_text(separator="\n")
         sailor_list = sailors.splitlines()
         for i in range(0, len(team_set)):
             sailor_set.append(sailor_list[sailor_index[i]-1:sailor_index[i+1]-1])
+        
+        #get full scores and store all data in content_list
         regatta_url = URL + year + regatta + '/full-scores/'
         print(regatta_url)
         page = requests.get(regatta_url)
         regatta_soup = BeautifulSoup(page.content, "html.parser")
-        #race_soup = BeautifulSoup(page.content, "html.parser")
         content = regatta_soup.contents[1].get_text(separator="\n")
         content_list = content.splitlines()
+
+        #finds the number of races in a set
         try: 
-            index_of_tot = content_list.index("TOT")
+            race_number = int(content_list[content_list.index("TOT") - 1])
         except: 
             failed.append("regatta isn't compatible (TOT failure): " + regatta + year)
             break
-        race_number = int(content_list[index_of_tot - 1])
+
+        #finds the index of every team name in the content_list
         temp = content_list.copy()
         for team in team_set:
             if(team[0] in content_list):
@@ -210,19 +226,38 @@ for regatta_data in regatta_result_set:
         print("Divisions: " + str(divisions))
         print("Races: " + str(race_number))
         print(str(combined))
+        print(regatta_results)
+        #sample regatta_results: 
+        # [['Eagles', ['A', '1', '8', '3', '3', '1', '9', '4', '2', '1', '1', '2', '2'], 
+        # ['B', '9', '1', '14', '1', '8', '1', '6', '12', '1', '4', '1', '4'], 
+        # ['C', '1', '1', '2', '3', '12', '1', '10', '6', '9', '7', '1', '3']], ... ]
         race_results = []
 
         try: 
+            print(team_set)
             for team in range(len(team_set)):
                 for race in range(race_number):
                     if(not combined):
                         for div in range(divisions):
-                            race_results.append([regatta_results[team][0] + regatta_results[team][1][0], race+1, div+1, convert_to_place(regatta_results[team][div+1][race+1],race_number), get_sailors(divisions, div+1, race+1, get_sailor(sailor_set, regatta_results[team][0], regatta_results[team][1][0]))])
-                    else: 
+                            #race_results.append(["school name" + "division"], race number, division number, place of sailor in that race, sailors who competed for the team in that race)
+                            race_results.append([regatta_results[team][0] + regatta_results[team][1][0], race+1, div+1, regatta_results[team][div+1][race+1], get_sailors(divisions, div+1, race+1, get_sailor(sailor_set, regatta_results[team][0], regatta_results[team][1][0]))])
+                    else:
                         for div in range(divisions):
-                            race_results.append([regatta_results[team][0] + regatta_results[team][1][0], race+1, 1, convert_to_place(regatta_results[team][div+1][race+1],race_number), get_sailors(divisions, div+1, race+1, get_sailor(sailor_set, regatta_results[team][0], regatta_results[team][1][0]))]) 
+                            race_results.append([regatta_results[team][0] + regatta_results[team][1][0], race+1, 1, regatta_results[team][div+1][race+1], get_sailors(divisions, div+1, race+1, get_sailor(sailor_set, regatta_results[team][0], regatta_results[team][1][0]))]) 
+            
             ## race results structure -> team, race, division, result, sailors
             results = convert_race(race_results, divisions, combined, race_number)
+            # results structure: 
+            #[[[["14", ["Harry Stevenson '24", "Ryan Standaert '24", '1-6,9-10', "Emily DeLossa '24", '7-8,11']], 
+            # ["7", ["Grant Adam '23", "Olivia MILLER '25", '1-6', "Ali Zaidi '24", '7-11']], 
+            # ["11", ["Nicholas Leshaw '22", "Sarah Jane O’Connor '24"]], 
+            # ["1", ["George Higham '23", "Jaqueline Frode '22", '1-6', "Izaiah Farr '23", '7-11']], 
+            # ["10", ["Luke Hosek '24", "Ethan Snyder '25"]], 
+            # ["6", ["Chase Reynolds '23", "Alden Sahi '25"]], 
+            # ["8", ["Peter Cronin '22", "Olivia Lowthian '25"]], 
+            # ["2", ["Connor Sheridan '22", "Harper McKerrow '23"]], 
+            # ["3", ["Michael Pinto '23", "Jonathan Glander '24"]], 
+            # ["5", ["Emma Snead '23", "Jin Johnson '24", '1-6', "Christina Mock '24", '7-11']], [12, ["Will Rudaz '22", '1-2,5-11', "Natalie Renehan '24", '1-2,5-11', "James Sullivan '25", '3-4', "Vincent (Vinny) Pallotto '23", '3-4']], [4, ["Miles Williams '24", "Anika Martz '22", '1-8,11', "Jonathan Riley '23", '9-10']], [9, ["Luke Quine '23", "Samuel Barrett '25"]], [13, ["Nick Ferrara '22", "Ryan Cloherty '22"]]],
         except: 
             print(str(regatta) + "failed 1")
             failed.append(str(regatta) + "failed 1" + year)
@@ -231,13 +266,27 @@ for regatta_data in regatta_result_set:
             for division in range(len(results)):
                 racenum = 1
                 for result in results[division]: 
-                    cur_race = [race_id, year, division + 1, combined, regatta, racenum, len(result)]
-                    result.sort(key = lambda x: x[0])
-                    for race in result: 
-                        cur_race.append(race[1])
-                    race_data.append(cur_race)
-                    race_id = race_id + 1
-                    racenum += 1
+                    cur_race = []
+                    #result.sort(key = lambda x: x[0])
+                    for race in result:
+                        if(len(race[1]) != 0 and race[0] != "BKD" and race[0] != "DNS"):
+                            cur_race.append([race[0], race[1]])
+                    new_race = []
+                    for race in cur_race: 
+                        if(is_first_char_integer(race[0])):
+                            new_race.append([int(race[0]), race[1]])
+                        else: 
+                            new_race.append([len(cur_race)+1, race[1]])
+                    new_race.sort(key= lambda x:x[0])
+                    #print(new_race)
+
+
+                    cur_race = [race_id, year, division + 1, combined, regatta, racenum, len(cur_race)] + [race[1] for race in new_race]
+
+                    if(cur_race[6] > 0):
+                        race_data.append(cur_race)
+                        race_id = race_id + 1
+                        racenum += 1
 
         except: 
             print(str(regatta) + " failed 2")
