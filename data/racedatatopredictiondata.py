@@ -28,10 +28,23 @@ for row in racedata[1:]:
         except: 
             print(sailors)
 
+unique_dict = {}
+sailor_array = [["id","name", "position", "year"]]
+all_keys = [x for x in sailor_dict.keys()]
+keynum = len(all_keys)
+for index in range(0, keynum):
+    unique_dict[all_keys[index]] = index
+    reverse_dict[index] = all_keys[index]
 
-sailor_array = [["name", "position", "year"]]
-for key in sailor_dict.keys():
-    sailor_array.append([key[:-4], sailor_dict[key], key[-2:]])
+print(unique_dict)
+for index in range(1,len(predictiondata)):
+    for index2 in range(len(predictiondata[index])):
+        try:
+            predictiondata[index][index2] = unique_dict[predictiondata[index][index2]]
+        except:
+            print(predictiondata[index][index2])
+for index in range(0, keynum):
+    sailor_array.append([unique_dict[all_keys[index][:-4]], all_keys[index][:-4], sailor_dict[all_keys[index]], all_keys[index][-2:]])
 
 venue_array = [["venue", "more"]]
 for key in venue_dict.keys():
