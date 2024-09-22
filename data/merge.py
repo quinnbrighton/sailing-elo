@@ -1,9 +1,9 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from torch.utils.data import random_split
-import torch
-import numpy as np
-from sklearn.preprocessing import OneHotEncoder
+#from sklearn.preprocessing import StandardScaler
+#from torch.utils.data import random_split
+#import torch
+#import numpy as np
+#from sklearn.preprocessing import OneHotEncoder
 import csv
 
 def load_csv(file_path, drop_columns=None):

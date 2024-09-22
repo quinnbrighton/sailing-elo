@@ -144,8 +144,8 @@ for regatta_data in regatta_result_set:
     #print(regatta_data)
     year = regatta_data[8]
     regatta = regatta_data[1]
-    if("2" in regatta_data[5].lower() and "single" not in regatta_data[5].lower() and "Official" == regatta_data[-2]
-    and ("cross regional" in regatta_data[4].lower() or "national" in regatta_data[4].lower()) and ("21" in year or "22" in year or "23" in year or "24" in year)):
+    if("team" not in regatta_data[5].lower() and "single" not in regatta_data[5].lower() and "Official" == regatta_data[-2]
+    and ("fundamental" in regatta_data[4].lower() or "conference" in regatta_data[4].lower() or "cross regional" in regatta_data[4].lower() or "national" in regatta_data[4].lower()) and ("23" in year or "24" in year)):
         print(regatta)
         print(year)
         regatta_set = []
