@@ -123,7 +123,7 @@ def convert_to_place(string_val,races):
     except: 
         return races+1
 
-race_data = [["raceid", "year", "race", "division", "combined", "regatta", "sailors"]]
+race_data = [["raceid", "year","venue","type","date", "division", "combined", "regatta","race","numsailors"]]
 for i in range(36):
     race_data[0].append(i+1)
 
@@ -145,7 +145,7 @@ for regatta_data in regatta_result_set:
     year = regatta_data[8]
     regatta = regatta_data[1]
     if("team" not in regatta_data[5].lower() and "single" not in regatta_data[5].lower() and "Official" == regatta_data[-2]
-    and ("fundamental" in regatta_data[4].lower() or "conference" in regatta_data[4].lower() or "cross regional" in regatta_data[4].lower() or "national" in regatta_data[4].lower()) and ("23" in year or "24" in year)):
+    and ("fundamental" in regatta_data[4].lower() or "conference" in regatta_data[4].lower() or "cross regional" in regatta_data[4].lower() or "national" in regatta_data[4].lower()) and ("24" in year)):
         print(regatta)
         print(year)
         regatta_set = []

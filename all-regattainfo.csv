@@ -1969,15 +1969,15 @@ Week 1,ccyc-fall-open,CCYC Fall Open #1,Texas A&M C. Christ,Fundamental,Combined
 Week 1,laser-north,Laser North,Kings Point,Fundamental,Singlehanded,09/07/2024,Official,f24/
 Week 1,laser-south,Laser South,Navy,Fundamental,Singlehanded,09/07/2024,Official,f24/
 Week 1,kp-open-invite,KP Open Invite,Kings Point,Fundamental,Combined,09/07/2024,Official,f24/
-Week 1,toni-duetsch-58-2024,Toni Duetsch '58 Trophy 2024,MIT,Fundamental,2 Divisions,09/07/2024,Official,f24/
+Week 1,toni-duetsch-58-2024,Toni Deutsch '58 Trophy 2024,MIT,Fundamental,2 Divisions,09/07/2024,Official,f24/
 Week 1,central-series,Central Series 1,Washington College,Fundamental,Combined,09/07/2024,Official,f24/
 Week 1,women-kp-invite,Women's Regatta at KP Invite,Kings Point,Fundamental,Combined,09/07/2024,Official,f24/
 Week 1,saisa-top-invite,SAISA Top 9 Invite,South Florida,Fundamental,Combined,09/07/2024,Official,f24/
 Week 1,saisa-north-fall-tournament,SAISA North Fall Tournament,Citadel,Fundamental,2 Divisions,09/07/2024,Official,f24/
 Week 1,saisa-south-fall-tournament,SAISA South Fall Tournament,Palm Beach Atlantic,Fundamental,2 Divisions,09/07/2024,Official,f24/
 Week 1,mt-hope-bay-invite,Mt. Hope Bay Invite,Roger Williams,Fundamental,1 Division,09/07/2024,Official,f24/
-Week 1,harry-anderson-jr,Harry Anderson Jr. Regatta,Yale,Fundamental,2 Divisions,09/07/2024,In progress: 12B,f24/
-Week 1,2024-pine,2024 Pine Trophy,Coast Guard,Fundamental,1 Division,09/07/2024,Pending,f24/
+Week 1,harry-anderson-jr,Harry Anderson Jr. Regatta,Yale,Fundamental,2 Divisions,09/07/2024,Official,f24/
+Week 1,2024-pine,2024 Pine Trophy,Coast Guard,Fundamental,1 Division,09/07/2024,Official,f24/
 Week 1,harvard-invitational,Harvard Invitational,Harvard,Fundamental,Combined,09/07/2024,Official,f24/
 Week 1,charles-invitational,Charles Invitational,Harvard,Fundamental,Combined,09/07/2024,Official,f24/
 Week 1,penobscot-bay-open,Penobscot Bay Open,Maine Maritime,Fundamental,Combined,09/07/2024,Official,f24/
@@ -2224,10 +2224,10 @@ Week 2,saisa-open-singlehanded-champs,SAISA Open Singlehanded Champs,Jacksonvill
 Week 2,shields,Shields Trophy,Navy,Cross Regional,1 Division,09/14/2024,Official,f24/
 Week 2,john-quinn,The John Quinn,Monmouth,Fundamental,2 Divisions,09/14/2024,Official,f24/
 Week 2,chesapeake-invitational,Chesapeake Invitational,Navy,Fundamental,Combined,09/14/2024,Official,f24/
-Week 2,hatch-brown-2024,The Hatch Brown Trophy 2024,MIT,Fundamental,3 Divisions,09/14/2024,Pending,f24/
-Week 2,buckeye-invite,Buckeye Invite,Ohio State,Fundamental,2 Divisions,09/14/2024,In progress: 6B,f24/
+Week 2,hatch-brown-2024,The Hatch Brown Trophy 2024,MIT,Fundamental,3 Divisions,09/14/2024,Official,f24/
+Week 2,buckeye-invite,Buckeye Invite,Ohio State,Fundamental,2 Divisions,09/14/2024,Official,f24/
 Week 2,jack-boehringer-52-open-invite,Jack Boehringer '52 Open Invite,Cornell,Fundamental,Combined,09/14/2024,Official,f24/
-Week 2,coho,Coho Memorial,Webb Institute,Fundamental,2 Divisions,09/14/2024,Pending,f24/
+Week 2,coho,Coho Memorial,Webb Institute,Fundamental,2 Divisions,09/14/2024,Official,f24/
 Week 2,chesapeake-open,Chesapeake Open,Navy,Fundamental,Combined,09/14/2024,Official,f24/
 Week 2,battle-lake-erie,Battle of Lake Erie,Penn State Behrend,Fundamental,2 Divisions,09/14/2024,Official,f24/
 Week 2,saisa-north-top-invite,SAISA North Top 6 Invite,Charleston,Fundamental,Combined,09/14/2024,Official,f24/
@@ -2272,7 +2272,7 @@ Week 3,regis,Regis Trophy,Boston University,NOT ALLOWED  In-Conference,2 Divisio
 Week 2,seisa-match-race-elimination,SEISA Match Race Elimination,Tulane,Conference Championship,1 Division,09/15/2019,Official,f19/
 Week 2,donaghy-bowl,Donaghy Bowl,U. Connecticut,NOT ALLOWED  In-Conference,2 Divisions,09/15/2019,Official,f19/
 Week 3,seisa-match-race,SEISA Match Race Championship,Texas,Conference Championship,1 Division,09/15/2023,Official,f23/
-Week 2,seisa-singlehand-open,SEISA Singlehanded Open Championship,Texas,Conference Championship,Singlehanded,09/15/2024,In progress: 3,f24/
+Week 2,seisa-singlehand-open,SEISA Singlehanded Open Championship,Texas,Conference Championship,Singlehanded,09/15/2024,Official,f24/
 Week 2,seisa-singlehand-women,SEISA Singlehanded Women's Championship,Texas,Conference Championship,Singlehanded,09/15/2024,Official,f24/
 Week 2,donaghy-bowl,Donaghy Bowl,U. Connecticut,Fundamental,2 Divisions,09/15/2024,Official,f24/
 Week 2,ashley-river,The Ashley River Trophy,Citadel,Fundamental,2 Divisions,09/15/2024,Official,f24/
@@ -2501,6 +2501,27 @@ Week 3,neisa-showcase-qualifier,NEISA Showcase Qualifier,Connecticut College,NOT
 Week 3,hood,Hood Trophy,Tufts,NOT ALLOWED  In-Conference,Combined,09/21/2019,Official,f19/
 Week 3,sherman-hoyt,Sherman Hoyt Trophy,Brown,NOT ALLOWED  In-Conference,2 Divisions,09/21/2019,Official,f19/
 Week 3,richard-ross-bowl,The Richard Ross College Bowl,Tufts,NOT ALLOWED  In-Conference,1 Division,09/21/2019,Official,f19/
+Week 3,pccsc-richard-sweet-match-race,PCCSC Richard Sweet Match Race Championship,Southern Cal,Conference Championship,1 Division,09/21/2024,Official,f24/
+Week 3,intrepid-maisa-match-race,Intrepid Trophy - MAISA Match Race Championship,Kings Point,Conference Championship,1 Division,09/21/2024,Official,f24/
+Week 3,saisa-match-race-championships,SAISA Match Race Championships,Charleston,Conference Championship,1 Division,09/21/2024,Official,f24/
+Week 3,open-sugar-bowl,Allstate Sugar Bowl Open,Tulane,Regional,Combined,09/21/2024,Official,f24/
+Week 3,women-sugar-bowl,Allstate Sugar Bowl Women's Regatta,Tulane,Regional,Combined,09/21/2024,Official,f24/
+Week 3,maisa-top-women,MAISA Top 9 Women's,Cornell,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,maisa-top-open,MAISA Top 9 Open,Cornell,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,eagle-invite,Eagle Invite,Boston College,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,tiger-women-open,Tiger Women's Open,Princeton,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,jesuit-invite,Jesuit Invite,Fordham,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,women-conference-top-69-invite,SAISA Women's Fall Top 9 Invite,Jacksonville,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,miami-saisa,Miami Trophy (SAISA),U. Miami,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,cazenovia-fall-open,CAZENOVIA FALL OPEN,Syracuse,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,mcsa-sloop,MCSA Sloop Championship,Hillsdale,Fundamental,1 Division,09/21/2024,Official,f24/
+Week 3,salt-pond-invite,Salt Pond Invite,Rhode Island,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,callagy-ross,Callagy Ross Regatta,Vermont,Fundamental,Combined,09/21/2024,Official,f24/
+Week 3,hood,Hood Trophy,Tufts,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,mrs-hurst-bowl,The 26th Mrs. Hurst Bowl,Dartmouth,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,sherman-hoyt,Sherman Hoyt Trophy,Brown,Fundamental,2 Divisions,09/21/2024,Official,f24/
+Week 3,great-lakes-ior-j105-division,Great Lakes IOR - J105 Division,Chicago,NOT ALLOWED  Promotional,1 Division,09/21/2024,Official,f24/
+Week 3,great-lakes-ior-t10-division,Great Lakes IOR - T10 Division,Chicago,NOT ALLOWED  Promotional,1 Division,09/21/2024,Official,f24/
 Week 4,neisa-men-singlehanded,NEISA Men's Singlehanded Championship,Boston College,Conference Championship,Singlehanded,09/22/2012,Official,f12/
 Week 4,faye-bennet-maisa-womens-singles,Faye Bennet MAISA Womens Singles,Navy,Conference Championship,Singlehanded,09/22/2012,Official,f12/
 Week 4,nwicsa-women-single-hand-quals,NWICSA Women's Singlehand Champs,Oregon,Conference Championship,Singlehanded,09/22/2012,Official,f12/
@@ -2548,6 +2569,7 @@ Week 4,sherman-hoyt,Sherman Hoyt Trophy,Brown,NOT ALLOWED  In-Conference,2 Divis
 Week 4,salt-pond-invite,Salt Pond Invite,Rhode Island,NOT ALLOWED  In-Conference,2 Divisions,09/22/2018,Official,f18/
 Week 4,mrs-hurst-bowl,Mrs. Hurst Bowl,Dartmouth,NOT ALLOWED  In-Conference,2 Divisions,09/22/2018,Official,f18/
 Week 3,harvard-invite,Harvard Invite,Harvard,NOT ALLOWED  In-Conference,2 Divisions,09/22/2019,Official,f19/
+Week 3,david-van-cleef,David Van Cleef Memorial Trophy,U South Carolina,Fundamental,2 Divisions,09/22/2024,Official,f24/
 Week 4,2011-pccsc-women-singles,2011 PCCSC Women's Singles,Stanford,Conference Championship,Singlehanded,09/23/2011,Official,f11/
 Week 4,saisa-south-women-regatta,SAISA South Women's Regatta,South Florida,NOT ALLOWED  In-Conference,2 Divisions,09/23/2012,Official,f12/
 Week 4,bowdoin-midweek-invite,Bowdoin Midweek Invite,Bowdoin,NOT ALLOWED  In-Conference,Combined,09/23/2015,Official,f15/
@@ -2781,6 +2803,24 @@ Week 4,chris-loder,Chris Loder Trophy,New Hampshire,NOT ALLOWED  In-Conference,2
 Week 4,sister-esther-open,Sister Esther Open,Salve Regina,NOT ALLOWED  In-Conference,2 Divisions,09/28/2019,Official,f19/
 Week 4,tufts-september-invite,Tufts September Invite,Tufts,NOT ALLOWED  In-Conference,Combined,09/28/2019,Official,f19/
 Week 5,bowdoin-mid-week-invite,Bowdoin Mid Week Invite,Bowdoin,Fundamental,1 Division,09/28/2023,Official,f23/
+Week 4,pccsc-women-singlehanded,PCCSC Women's Singlehanded Championship,UC Santa Barbara,Conference Championship,Singlehanded,09/28/2024,Official,f24/
+Week 4,pccsc-singlehanded,PCCSC Open Singlehanded Championship,UC Santa Barbara,Conference Championship,Singlehanded,09/28/2024,Official,f24/
+Week 4,carl-van-duyne-maisa-open-singles,Carl Van Duyne MAISA Open Singles,Navy,Conference Championship,Singlehanded,09/28/2024,Official,f24/
+Week 4,danmark,Danmark Trophy,Coast Guard,Cross Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,charleston-fall-interconference,Charleston Fall Interconference,Charleston,Cross Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,women-acc-round-1b,Women's ACC's Round 1B,Brown,Cross Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,women-acc-first-round,Women's ACC Round 1A,Connecticut College,Cross Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,moody,Moody Trophy,Rhode Island,Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,robert-cary-allen-price,Robert Cary-Allen Price Memorial Regatta,Michigan,Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,ny-maritime-fall-open,NY Maritime Fall Open,NY Maritime,Regional,2 Divisions,09/28/2024,Official,f24/
+Week 4,george-warren-smith-24,The George Warren Smith Trophy 24,MIT,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,mccurdy,McCurdy Memorial Regatta,Delaware,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,chenard-cup,Chenard Cup,Georgia Tech,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,sodus-bay-open,Sodus Bay Open,Rochester,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,greg-popp-erau,Greg Popp Trophy @ ERAU,Embry-Riddle,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,mcgill-cup,McGill Cup,McGill,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,boiler-cup,Boiler Cup,Purdue,Fundamental,2 Divisions,09/28/2024,Official,f24/
+Week 4,bu-invite,BU Invite,Boston University,Fundamental,2 Divisions,09/28/2024,Official,f24/
 Week 5,maisa-women-fall-dinghy-champs,MAISA Women's Fall Dinghy Champs,St. Mary's,Conference Championship,2 Divisions,09/29/2012,Official,f12/
 Week 5,neisa-women-singlehanded-championships,NEISA Women's Singlehanded Championships,Connecticut College,Conference Championship,Singlehanded,09/29/2012,Official,f12/
 Week 5,saisa-women-single-handed,SAISA Women's Single Handed,U. Miami,Conference Championship,Singlehanded,09/29/2012,Official,f12/
@@ -2822,6 +2862,7 @@ Week 5,boiler-cup,Boiler Cup,Purdue,NOT ALLOWED  In-Conference,2 Divisions,09/29
 Week 5,saisa-south-points,SAISA South Points #3,Jacksonville,NOT ALLOWED  In-Conference,2 Divisions,09/29/2018,Official,f18/
 Week 5,george-warren-smith,George Warren Smith Trophy,MIT,NOT ALLOWED  In-Conference,2 Divisions,09/29/2018,Official,f18/
 Week 5,lark-invite,Lark Invite,Tufts,NOT ALLOWED  In-Conference,Combined,09/29/2018,Official,f18/
+Week 4,shu,SHU Trophy,Sacred Heart,Fundamental,2 Divisions,09/29/2024,Official,f24/
 Week 5,saisa-womens-fall-dinghy-champs,SAISA Womens Fall Dinghy Champs,U. Miami,Conference Championship,Combined,09/30/2012,Official,f12/
 Week 5,saisa-women-fall,SAISA Women's Fall Championships,South Florida,Conference Championship,Combined,09/30/2017,Official,f17/
 Week 5,saisa-women-singlehandeds,SAISA Women's Singlehandeds,South Florida,Conference Championship,Singlehanded,09/30/2017,Official,f17/
@@ -2976,6 +3017,7 @@ Week 5,illinois,Illinois Regatta,Illinois,NOT ALLOWED  In-Conference,2 Divisions
 Week 5,saisa-sp4,SAISA South Points #4,Florida,NOT ALLOWED  In-Conference,2 Divisions,10/03/2015,Official,f15/
 Week 6,j70-tuesday-series,J70 Tuesday Series #4,Coast Guard,NOT ALLOWED  In-Conference,1 Division,10/03/2017,Official,f17/
 Week 5,golden-bailer,The Golden Bailer Trophy,Rollins,NOT ALLOWED  In-Conference,2 Divisions,10/03/2021,Official,f21/
+Week 5,bowdoin-mid-week-invitational,Bowdoin Mid Week Invitational,Bowdoin,Fundamental,1 Division,10/03/2024,Official,f24/
 Week 5,smith,Smith Trophy,MIT,NOT ALLOWED  In-Conference,2 Divisions,10/04/2008,Official,f08/
 Week 5,2014-seisa-singlehanded-men,SEISA Singlehanded Men,Texas A&M Galveston,Conference Championship,Singlehanded,10/04/2014,Official,f14/
 Week 5,2014-seisa-singlehanded-women,2014 SEISA Singlehanded Women,Texas A&M Galveston,Conference Championship,Singlehanded,10/04/2014,Official,f14/
@@ -3039,6 +3081,28 @@ Week 5,rollins-golden-bailer-developmental,Rollins Golden Bailer Developmental R
 Week 5,great-herring-pond-open,Great Herring Pond Open,Mass Maritime,NOT ALLOWED  In-Conference,2 Divisions,10/05/2019,Official,f19/
 Week 5,george-warren-smith,George Warren Smith Trophy,MIT,NOT ALLOWED  In-Conference,2 Divisions,10/05/2019,Official,f19/
 Week 5,tom-curtis,Tom Curtis Memorial Regatta,Georgetown,NOT ALLOWED  In-Conference,1 Division,10/05/2019,Official,f19/
+Week 5,mcsa-match-race,MCSA Match Race Championship,Northwestern,Conference Championship,1 Division,10/05/2024,Official,f24/
+Week 5,open-atlantic-coast-round-1a,Open Atlantic Coast Championship Round 1A,Navy,Showcase,2 Divisions,10/05/2024,Official,f24/
+Week 5,open-atlantic-coast-round-1b,Open Atlantic Coast Championship Round 1B,St. Mary's,Showcase,2 Divisions,10/05/2024,Official,f24/
+Week 5,cofc-women-fall,CofC Women's Fall,Charleston,Cross Regional,Combined,10/05/2024,Official,f24/
+Week 5,stu-nelson-connecticut,Stu Nelson@ Connecticut College,Connecticut College,Cross Regional,3 Divisions,10/05/2024,Official,f24/
+Week 5,hewitt,Hewitt Trophy,Bowdoin,Regional,2 Divisions,10/05/2024,Official,f24/
+Week 5,kilpatrick,Kilpatrick Regatta,Central Oklahoma,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,acton-up-fall-2024,Acton Up Fall 2024,Miami University,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,pere-marquette,Pere Marquette,Marquette,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,tiger-town,Tiger Town Trophy,Clemson,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,dick-allsop,The Dick Allsop Trophy,Jacksonville,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,richard-ross-courageous,Richard Ross at Courageous,New Hampshire,Fundamental,1 Division,10/05/2024,Official,f24/
+Week 5,princeton-fall-open,Princeton Fall Open,Princeton,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,oyster-bowl,Oyster Bowl,Old Dominion,Fundamental,Combined,10/05/2024,Official,f24/
+Week 5,monroe-mania,Monroe Mania,Indiana,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,west-canada-cup-24,Western Canada Cup '24,Victoria,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,jefferson-cup,Jefferson Cup,Virginia,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,sister-esther,Sister Esther Trophy,Salve Regina,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,stony-brook-fall-open,Stony Brook Fall Open,Stony Brook,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,seneca-showdown,Seneca Showdown,Hobart & William,Fundamental,1 Division,10/05/2024,Official,f24/
+Week 5,stuart-walker,Stuart Walker Trophy,Middlebury,Fundamental,2 Divisions,10/05/2024,Official,f24/
+Week 5,great-herring-pond-open,Great Herring Pond Open,Mass Maritime,Fundamental,2 Divisions,10/05/2024,Official,f24/
 Week 6,mcsa-single-handed,MCSA Single Handed Championship,Northwestern,Conference Championship,Singlehanded,10/06/2012,Official,f12/
 Week 6,mcsa-women-single-handed,MCSA Women's Single Handed,Northwestern,Conference Championship,Singlehanded,10/06/2012,Official,f12/
 Week 6,neisa-match-race,NEISA Match Race Championship,Brown,Conference Championship,1 Division,10/06/2012,Official,f12/
@@ -3076,6 +3140,7 @@ Week 6,great-herring-pond-open,Great Herring Pond Open,Mass Maritime,NOT ALLOWED
 Week 6,u-of-i,U of I,Illinois,NOT ALLOWED  In-Conference,2 Divisions,10/06/2018,Official,f18/
 Week 6,sister-esther-open,Sister Esther Open,Salve Regina,NOT ALLOWED  In-Conference,2 Divisions,10/06/2018,Official,f18/
 Week 5,protest,Protest Regatta,Bates,Scrimmage,Combined,10/06/2019,Official,f19/
+Week 5,protest,Protest Trophy,Bates,Fundamental,Combined,10/06/2024,Official,f24/
 Week 6,saisa-wilmington-north-points-4,SAISA North Points #4,UNC Wilmington,NOT ALLOWED  In-Conference,2 Divisions,10/07/2012,Official,f12/
 Week 6,protest,Protest Trophy,Bates,NOT ALLOWED  In-Conference,Combined,10/07/2012,Official,f12/
 Week 6,carl-van-duyne-maisa-singles,Carl Van Duyne - MAISA Singles,Kings Point,Conference Championship,Singlehanded,10/07/2017,Official,f17/
@@ -3269,6 +3334,25 @@ Week 6,mcgill-cup,McGill Cup,McGill,NOT ALLOWED  In-Conference,Combined,10/12/20
 Week 6,stoney-burke-jv,Stoney Burke JV,Berkeley,NOT ALLOWED  In-Conference,2 Divisions,10/12/2019,Official,f19/
 Week 6,stony-brook-fall-open,Stony Brook Fall Open,Stony Brook,NOT ALLOWED  In-Conference,Combined,10/12/2019,Official,f19/
 Week 6,callagy-ross,Callagy Ross Trophy,Vermont,NOT ALLOWED  In-Conference,Combined,10/12/2019,Official,f19/
+Week 6,neisa-match-race,NEISA Match Race Championship,Coast Guard,Conference Championship,1 Division,10/12/2024,Official,f24/
+Week 6,women-atlantic-coast-tournament,Women's Atlantic Coast Tournament,St. Mary's,Showcase,2 Divisions,10/12/2024,Official,f24/
+Week 6,women-atlantic-coast-finals,Women's Atlantic Coast Championship Finals,Navy,Showcase,2 Divisions,10/12/2024,Official,f24/
+Week 6,david-lee-arnoff,David Lee Arnoff Trophy,Hobart & William,Cross Regional,Combined,10/12/2024,Official,f24/
+Week 6,33rd-captain-hurst-bowl,The 33rd Captain Hurst Bowl,Dartmouth,Cross Regional,2 Divisions,10/12/2024,In progress: 13B,f24/
+Week 6,nevins,Nevins Trophy,Kings Point,Cross Regional,2 Divisions,10/12/2024,Official,f24/
+Week 6,kathryn-hammond,Kathryn Hammond,Texas,Regional,Combined,10/12/2024,Official,f24/
+Week 6,savin-hill-invite,Savin Hill Invite,Boston College,Regional,2 Divisions,10/12/2024,In progress: 5B,f24/
+Week 6,carin-streufert,Carin Streufert Memorial Regatta,Minnesota,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,boudeman-cup,Boudeman Cup,Western Michigan,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,saisa-women-sprint,SAISA Women's Sprint,Florida State,Fundamental,1 Division,10/12/2024,Official,f24/
+Week 6,washington-fall-open,Washington College Fall Open,Washington College,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,fall-foliage,Fall Foliage,New Hampshire,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,rebecca-becky-blank,"Rebecca ""Becky"" Blank Regatta",Northwestern,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,cascadia-cup-varsity,Cascadia Cup Varsity,Washington,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,salve-invite,Salve Invite,Salve Regina,Fundamental,Combined,10/12/2024,Official,f24/
+Week 6,cascadia-cup-jv,Cascadia Cup JV,Washington,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,ucsd-open,UCSD Open,UC San Diego,Fundamental,2 Divisions,10/12/2024,Official,f24/
+Week 6,ucsd-frosh-soph,UCSD Frosh Soph,UC San Diego,Fundamental,2 Divisions,10/12/2024,Official,f24/
 Week 7,seisa-match-race,SEISA Match Race Championship,Tulane,Conference Championship,1 Division,10/13/2012,Official,f12/
 Week 7,stoney-burke-regatta,Stoney Burke Regatta,Berkeley,NOT ALLOWED  Interconference,2 Divisions,10/13/2012,Official,f12/
 Week 7,navy-fall,Navy Fall,Navy,NOT ALLOWED  Interconference,4 Divisions,10/13/2012,Official,f12/
@@ -3312,6 +3396,8 @@ Week 7,crew,Crew's Regatta,Mass Maritime,NOT ALLOWED  In-Conference,2 Divisions,
 Week 7,mcgill-cup,McGill Cup,McGill,NOT ALLOWED  In-Conference,2 Divisions,10/13/2018,Official,f18/
 Week 7,callagy-ross,Callagy Ross Trophy,Vermont,NOT ALLOWED  In-Conference,Combined,10/13/2018,Official,f18/
 Week 6,chuck-fontaine-invite,Chuck Fontaine Invite,Mass Maritime,NOT ALLOWED  In-Conference,Combined,10/13/2019,Official,f19/
+Week 6,reese-cup,Reese's Cup,New Hampshire,Fundamental,Combined,10/13/2024,Official,f24/
+Week 6,crews,Crews Regatta,Boston University,NOT ALLOWED  In-Conference,Combined,10/13/2024,Official,f24/
 Week 7,seisa-match-racing,SEISA Match Racing Championship,Texas A&M Galveston,Conference Championship,1 Division,10/14/2017,Official,f17/
 Week 7,mcsa-men-single-handed-championships,MCSA Men's Singlehanded Championships,Hope,Conference Championship,Singlehanded,10/14/2017,Official,f17/
 Week 7,mcsa-women-singlehanded,MCSA Women's Singlehanded Championship,Hope,Conference Championship,Singlehanded,10/14/2017,Official,f17/
@@ -3516,6 +3602,23 @@ Week 7,ucsd-frosh-soph,UCSD Frosh Soph,UC San Diego,NOT ALLOWED  In-Conference,2
 Week 7,ucsd-open,UCSD Open,UC San Diego,NOT ALLOWED  In-Conference,2 Divisions,10/19/2019,Official,f19/
 Week 7,cascadia-cup-gold,Cascadia Cup Gold,Washington,NOT ALLOWED  In-Conference,2 Divisions,10/19/2019,Official,f19/
 Week 7,cascadia-cup-silver,Cascadia Cup Silver,Washington,NOT ALLOWED  In-Conference,2 Divisions,10/19/2019,Official,f19/
+Week 7,open-atlantic-coast-final,Open Atlantic Coast Championship Final,Boston College,Showcase,2 Divisions,10/19/2024,In progress: 4A,f24/
+Week 7,mcmillan-cup,McMillan Cup,Navy,Cross Regional,1 Division,10/19/2024,Official,f24/
+Week 7,open-atlantic-coast-tournament,Open Atlantic Coast Tournament,Connecticut College,Cross Regional,2 Divisions,10/19/2024,Official,f24/
+Week 7,yale-women-interconference,Yale Women's Interconference,Yale,Cross Regional,2 Divisions,10/19/2024,In progress: 13B,f24/
+Week 7,wisco-womens,Wisco Womens,Wisconsin,Regional,2 Divisions,10/19/2024,Official,f24/
+Week 7,emma-2024,Emma Biagioni Memorial Regatta,Hope,Regional,2 Divisions,10/19/2024,Official,f24/
+Week 7,stoney-burke,Stoney Burke,Berkeley,Regional,2 Divisions,10/19/2024,Official,f24/
+Week 7,oberg,Oberg Trophy,Northeastern,Regional,3 Divisions,10/19/2024,Official,f24/
+Week 7,stoney-burke-womens,Stoney Burke Womens,Berkeley,Regional,2 Divisions,10/19/2024,Official,f24/
+Week 7,seahawk-shindig,Seahawk Showdown,UNC Wilmington,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,outlaw,Outlaw Regatta,Oregon,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,stoney-burke-jv,Stoney Burke JV,Berkeley,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,chris-loder,Chris Loder Trophy,New Hampshire,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,lake-virginia-invitational,Lake Virginia Invitational,Rollins,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,luce,Luce Regatta,Washington College,Fundamental,1 Division,10/19/2024,Official,f24/
+Week 7,fall-open,CCYC Fall Open #2,Texas A&M C. Christ,Fundamental,2 Divisions,10/19/2024,Official,f24/
+Week 7,norman-reid-team-race,Norman Reid Team Race,Tufts,Fundamental,Team,10/19/2024,In progress: scheduled,f24/
 Week 8,fall-women-pacific-coast,Fall Women's Pacific Coast Championship,Southern Cal,Conference Championship,Combined,10/20/2012,Official,f12/
 Week 8,pccsc-men-singlehanded,PCCSC Men's Singlehanded,Southern Cal,Conference Championship,Singlehanded,10/20/2012,Official,f12/
 Week 8,stu-nelson,Stu Nelson Trophy,MIT,NOT ALLOWED  Interconference,2 Divisions,10/20/2012,Official,f12/
@@ -3545,6 +3648,7 @@ Week 8,oberg,Oberg Trophy,Northeastern,NOT ALLOWED  In-Conference,3 Divisions,10
 Week 8,cascadia-cup-varsity,Cascadia Cup Varsity,Washington,NOT ALLOWED  In-Conference,2 Divisions,10/20/2018,Official,f18/
 Week 8,cascadia-cup-jv,Cascadia Cup JV,Washington,NOT ALLOWED  In-Conference,2 Divisions,10/20/2018,Official,f18/
 Week 7,caboose-cup-classic,Caboose Cup Classic,Georgetown,NOT ALLOWED  In-Conference,1 Division,10/20/2019,Official,f19/
+Week 7,franklin-lane-team-race,Franklin Lane Trophy Team Race,Tufts,Fundamental,Team,10/20/2024,In progress: 15,f24/
 Week 8,saisa-match-race,SAISA Match Race Championship,Charleston,Conference Championship,1 Division,10/21/2012,Official,f12/
 Week 8,mcsa-match-race,MCSA Match Race Championship,Wisconsin,Conference Championship,1 Division,10/21/2012,Official,f12/
 Week 8,wellahan,Wellahan Trophy,New Hampshire,NOT ALLOWED  In-Conference,2 Divisions,10/21/2012,Official,f12/
@@ -3695,6 +3799,7 @@ Week 8,big-ten-team-race,Big Ten Team Race,Michigan,NOT ALLOWED  In-Conference,T
 Week 8,fall-foliage,Fall Foliage,New Hampshire,NOT ALLOWED  In-Conference,Combined,10/25/2014,Official,f14/
 Week 8,south-seven,Southern Seven,Roger Williams,NOT ALLOWED  In-Conference,Combined,10/25/2014,Official,f14/
 Week 9,dark-night,Dark of Night Regatta,Tufts,NOT ALLOWED  Promotional,Combined,10/25/2018,Official,f18/
+Week 8,saisa-fall-women,SAISA Fall Women's Championship,Charleston,Conference Championship,Combined,10/25/2024,Official,f24/
 Week 9,outlaw,Outlaw,Oregon,NOT ALLOWED  In-Conference,2 Divisions,10/26/2012,In progress: 8A,f12/
 Week 8,pccsc-men-singlehanded-champs,PCCSC Men's Singlehanded Champs,Southern Cal,Conference Championship,Singlehanded,10/26/2013,Official,f13/
 Week 8,women-pacific-coast,Women's Pacific Coast Championship,Southern Cal,Conference Championship,2 Divisions,10/26/2013,Official,f13/
@@ -3726,6 +3831,18 @@ Week 8,shamrock-scramble,Shamrock Scramble,Notre Dame,NOT ALLOWED  In-Conference
 Week 8,dave-perry-team-race,Dave Perry Team Race,Yale,NOT ALLOWED  In-Conference,Team,10/26/2019,Official,f19/
 Week 8,outlaw,Outlaw Regatta,Oregon,NOT ALLOWED  In-Conference,2 Divisions,10/26/2019,Official,f19/
 Week 9,dark-night,The Dark of Night,Tufts,Fundamental,2 Divisions,10/26/2023,Official,f23/
+Week 8,women-urn,Women's Urn Trophy/NEISA Women’s Fall Champs,Brown,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,maisa-women-fall-dinghy,MAISA Women's Fall Dinghy,Old Dominion,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,war,War Memorial,St. Mary's,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,neisa-fall-tournament,NEISA Fall Tournament,Bentley,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,schell-neisa-open,Schell Trophy NEISA Open Championship,Yale,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,pccsc-women-fall,PCCSC Women's Fall Championship,Stanford,Conference Championship,Combined,10/26/2024,Official,f24/
+Week 8,saisa-fall-open,"SAISA Fall Open Champs, Robert L. Armstrong Trophy",Charleston,Conference Championship,2 Divisions,10/26/2024,Official,f24/
+Week 8,nickerson,Nickerson Trophy,Tufts,Regional,2 Divisions,10/26/2024,In progress: 12A,f24/
+Week 8,cedarfest,Cedarfest,Michigan State,Fundamental,2 Divisions,10/26/2024,Official,f24/
+Week 8,kingfisher,Kingfisher,Illinois,Fundamental,2 Divisions,10/26/2024,Official,f24/
+Week 8,top-fall-invite,Top-9 Fall Invite,Stanford,Fundamental,Combined,10/26/2024,Official,f24/
+Week 8,terrier-invite,Terrier Invite,Boston University,NOT ALLOWED  In-Conference,2 Divisions,10/26/2024,Official,f24/
 Week 9,erwin-schell,Erwin Schell Trophy,Brown,Conference Championship,2 Divisions,10/27/2012,Official,f12/
 Week 9,war-memorial,War Memorial,Kings Point,Conference Championship,2 Divisions,10/27/2012,Official,f12/
 Week 9,victorian-coffee-urn,Victorian Coffee Urn,Connecticut College,NOT ALLOWED  Interconference,2 Divisions,10/27/2012,Official,f12/
@@ -3754,6 +3871,7 @@ Week 9,outlaw,Outlaw,Oregon State,NOT ALLOWED  In-Conference,2 Divisions,10/27/2
 Week 8,2019-womens-champs,2019 Womens Champs,Texas A&M Galveston,NOT ALLOWED  In-Conference,Combined,10/27/2019,Official,f19/
 Week 9,dark-night,The Dark of Night,Tufts,NOT ALLOWED  In-Conference,2 Divisions,10/27/2022,Official,f22/
 Week 9,saisa-fall-women,SAISA Fall Women's Championship,South Florida,Conference Championship,2 Divisions,10/27/2023,Official,f23/
+Week 8,seisa-women-fall,SEISA Women's Fall Championship,Texas,Conference Championship,Combined,10/27/2024,Official,f24/
 Week 9,war,War Memorial,Hobart & William Sm,Conference Championship,2 Divisions,10/28/2017,Official,f17/
 Week 9,saisa-fall-coed,SAISA Fall Coed Conference Championships,Charleston,Conference Championship,2 Divisions,10/28/2017,Official,f17/
 Week 9,north-north,North/North,Washington,Conference Championship,2 Divisions,10/28/2017,Official,f17/
@@ -3892,6 +4010,11 @@ Week 9,big-ten-team-race,Big Ten Team Race,Michigan,NOT ALLOWED  In-Conference,T
 Week 9,saisa-co-ed,SAISA Co-Ed Conference Championships,Georgia Tech,Conference Championship,2 Divisions,11/02/2019,Official,f19/
 Week 9,kennedy-cup,Kennedy Cup,Navy,NOT ALLOWED  Interconference,1 Division,11/02/2019,Official,f19/
 Week 9,frosh-soph,Frosh/Soph,Western Washington,NOT ALLOWED  In-Conference,2 Divisions,11/02/2019,Official,f19/
+Week 9,mcsa-open-fall,MCSA Open Fall Championship,Hope,Conference Championship,2 Divisions,11/02/2024,Official,f24/
+Week 9,kennedy-cup,Kennedy Cup,Navy,Cross Regional,1 Division,11/02/2024,Official,f24/
+Week 9,baldwin-wood,Baldwin Wood,Tulane,Fundamental,1 Division,11/02/2024,Official,f24/
+Week 9,north-north,North/North,Washington,Fundamental,2 Divisions,11/02/2024,Official,f24/
+Week 9,kiara-broudy,Kiara Broudy Memorial,UC Santa Cruz,Fundamental,2 Divisions,11/02/2024,Official,f24/
 Week 10,saisa-maisa,SAISA/MAISA,Charleston,NOT ALLOWED  Two-Conference,2 Divisions,11/03/2012,Official,f12/
 Week 10,maisa-club-team,MAISA Club Team Championship,William and Mary,NOT ALLOWED  In-Conference,2 Divisions,11/03/2012,Pending,f12/
 Week 10,ri-state-champs-sister-esther-open,"RI State Champs, Sister Esther Open",Salve Regina,NOT ALLOWED  In-Conference,2 Divisions,11/03/2012,Official,f12/
@@ -3999,6 +4122,10 @@ Week 11,dark-night,Dark of Night Regatta,Tufts,NOT ALLOWED  In-Conference,2 Divi
 Week 10,laserperformance-men-singlehanded-nationals,LaserPerformance Men's Singlehanded Nationals,UC Santa Barbara,National Championship Finals,Singlehanded,11/09/2019,Official,f19/
 Week 10,laserperformance-women-singlehanded-nationals,LaserPerformance Women's Singlehanded Nationals,UC Santa Barbara,National Championship Finals,Singlehanded,11/09/2019,Official,f19/
 Week 10,patrick-sullivan-burtchaell,Patrick Sullivan Burtchaell Regatta,Loyola,NOT ALLOWED  In-Conference,2 Divisions,11/09/2019,Official,f19/
+Week 10,janet-lutz,Janet Lutz Trophy,South Florida,National Championship Finals,Singlehanded,11/09/2024,In progress: 7,f24/
+Week 10,glen-foster,Glen S. Foster Trophy,South Florida,National Championship Finals,Singlehanded,11/09/2024,In progress: 7,f24/
+Week 10,2024-triangle-tango-intercollegiate,2024 Triangle Tango Intercollegiate Regatta,North Carolina State,Regional,2 Divisions,11/09/2024,In progress: 6A,f24/
+Week 10,corpus-christi-fall-open,Corpus Christi Fall Open #3,Texas A&M C. Christ,Fundamental,1 Division,11/09/2024,In progress: 3,f24/
 Week 11,atlantic-coast-tournament,Atlantic Coast Tournament,St. Mary's,NOT ALLOWED  Interconference,2 Divisions,11/10/2012,Official,f12/
 Week 11,women-atlantic-coast,Women's Atlantic Coast Championship,Connecticut College,NOT ALLOWED  Interconference,2 Divisions,11/10/2012,Official,f12/
 Week 11,fall-dinghy-pcc-3-div,Fall Dinghy PCC's 3 Div,UC Santa Barbara,NOT ALLOWED  Interconference,3 Divisions,11/10/2012,Official,f12/

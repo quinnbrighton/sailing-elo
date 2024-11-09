@@ -59,7 +59,7 @@ with open("data/testrdata.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(predictiondata)
 
-with open("data/testrdatasailor.csv", 'w') as racefile:
+with open("data/testrdataskipper.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(sailor_array)
 
