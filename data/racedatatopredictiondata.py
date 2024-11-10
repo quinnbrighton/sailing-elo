@@ -7,46 +7,107 @@ with open("data/testracedata.csv", 'r') as csvfile:
     for row in csvreader:
         racedata.append(row)
 
-#15,f23/,Southern Cal,2,False,2024-rose-bowl,7,14,"[""Peter Joslin '26"", ""Michaela O'Brien '24""]","[""Piper Holthus '25"", ""Poshu Ng '27""]","[""Bradley Whiteway '26"", ""Mia Quinlan '24""]","[""Reed McAllister '27"", ""Katherine Mason '27""]","[""Tiare Sierra '25"", ""Morgan Contrino '24""]","[""Daren Sathasivam '25"", ""Aidan Araoz '25""]","[""Jack Roman '26"", ""Addyson Fisher '27""]","[""Hudson Mayfield '27"", ""Jan Matteo Bassi '27""]","[""Max Kleha '25"", ""Brooke Bertrand '25""]","[""Garrison Guzzeau '25"", ""Anna Kovacs '25""]","[""Samuel Groom '24"", ""Daniel Gates '26""]","[""Ryan Tuttle '27"", ""Sadie Creemer '25""]","[""Bradley Whiteway '26"", ""Mia Quinlan '24""]","[""Brooke Davi '25"", ""James Unger '27""]"
-#16,f23/,Southern Cal,2,False,2024-rose-bowl,8,15,"[""Bradley Whiteway '26"", ""Mia Quinlan '24""]","[""Connor Bennett '26"", ""Samantha Hemans '27""]","[""Jack Roman '26"", ""Addyson Fisher '27""]","[""Peter Joslin '26"", ""Michaela O'Brien '24""]","[""Piper Holthus '25"", ""Poshu Ng '27""]","[""Reed McAllister '27"", ""Katherine Mason '27""]","[""Tiare Sierra '25"", ""Morgan Contrino '24""]","[""Max Kleha '25"", ""Brooke Bertrand '25""]","[""Hudson Mayfield '27"", ""Jan Matteo Bassi '27""]","[""Brooke Davi '25"", ""James Unger '27""]","[""Bradley Whiteway '26"", ""Mia Quinlan '24""]","[""Daren Sathasivam '25"", ""Aidan Araoz '25""]","[""Samuel Groom '24"", ""Daniel Gates '26""]","[""Ryan Tuttle '27"", ""Sadie Creemer '25""]","[""Garrison Guzzeau '25"", ""Anna Kovacs '25""]"
-#17,s22/,Charleston,1,False,south-collegiate-offshore,1,2,"[""Aidan naughton '22"", ""Parker Colantuono '22"", ""Tyler Miller '23"", ""Max Hooker '22"", ""AJ Kozaritz '23"", ""Clare Laroche '23"", ""Elizabeth Taylor '24"", ""Iain Jaeger '23""]","[""Wyatt Dennis '23"", ""Joe Serpa '24"", ""Zachary Beyer '25"", ""Gordon Fream '25"", ""Brendan Doyle '22"", ""Ryan O'Connor '23"", ""Samuel Stephens '25"", ""Christiana Scheibner '23""]"
-#18,s22/,Charleston,1,False,south-collegiate-offshore,2,2,"[""Aidan naughton '22"", ""Parker Colantuono '22"", ""Tyler Miller '23"", ""Max Hooker '22"", ""AJ Kozaritz '23"", ""Clare Laroche '23"", ""Elizabeth Taylor '24"", ""Iain Jaeger '23""]","[""Wyatt Dennis '23"", ""Joe Serpa '24"", ""Zachary Beyer '25"", ""Gordon Fream '25"", ""Brendan Doyle '22"", ""Ryan O'Connor '23"", ""Samuel Stephens '25"", ""Christiana Scheibner '23""]"
+#raceid,year,week,venue,type,date,division,combined,regatta,race,numsailors,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36
+#1,s24/,Preweek 1,UC San Diego,Fundamental,01/27/2024,1,False,jeff-simon-open,1,11,"[""Luke Harris '27"", ""Ava Bergan '27""]","[""Davis Winsor '24"", ""Cara Loo '24""]","[""Robert Bloomfield '26"", ""Samuel Groom '24""]","[""Jan Matteo Bassi '27"", ""Jack Blackman '24""]","[""Jack Phibbs '27"", ""Annika Burns '27""]","[""Aidan Boylan '24"", ""Noah Lovelace '25""]","[""Camden Wacha '27"", ""Colin Wood '27""]","[""lucas kaemmerer '26"", ""Alexis Kovacevic '27""]","[""Ethan Lisle '25"", ""Nate Ingebritson '25""]","[""William Bailly '26"", ""Kyla Coubrough '24""]","[""Annika Altman '26"", ""Phoebe Liermann '27""]"
+#2,s24/,Preweek 1,UC San Diego,Fundamental,01/27/2024,1,False,jeff-simon-open,2,11,"[""Luke Harris '27"", ""Ava Bergan '27""]","[""Davis Winsor '24"", ""Cara Loo '24""]","[""Jack Phibbs '27"", ""Annika Burns '27""]","[""Jan Matteo Bassi '27"", ""Jack Blackman '24""]","[""Robert Bloomfield '26"", ""Samuel Groom '24""]","[""Aidan Boylan '24"", ""Noah Lovelace '25""]","[""Ethan Lisle '25"", ""Nate Ingebritson '25""]","[""William Bailly '26"", ""Kyla Coubrough '24""]","[""Camden Wacha '27"", ""Colin Wood '27""]","[""lucas kaemmerer '26"", ""Alexis Kovacevic '27""]","[""Annika Altman '26"", ""Phoebe Liermann '27""]"
+#3,s24/,Preweek 1,UC San Diego,Fundamental,01/27/2024,1,False,jeff-simon-open,3,11,"[""Luke Harris '27"", ""Ava Bergan '27""]","[""Davis Winsor '24"", ""Cara Loo '24""]","[""Robert Bloomfield '26"", ""Samuel Groom '24""]","[""Jan Matteo Bassi '27"", ""Jack Blackman '24""]","[""Aidan Boylan '24"", ""Noah Lovelace '25""]","[""Jack Phibbs '27"", ""Annika Burns '27""]","[""Ethan Lisle '25"", ""Madalyn Gordon '25""]","[""Camden Wacha '27"", ""Colin Wood '27""]","[""lucas kaemmerer '26"", ""Hazel Ross '27""]","[""William Bailly '26"", ""Kyla Coubrough '24""]","[""Annika Altman '26"", ""Phoebe Liermann '27""]"
 
-sailor_dict = {}
+skipper_dict = {}
+crew_dict = {}
 venue_dict = {}
 for row in racedata[1:]: 
     place = 1
-    for sailors in row[10:]:
+    for sailors in row[11:]:
         sailors = eval(sailors)
         try: 
-            predictiondata.append([place, sailors[0], sailors[1]] + row[1:10])
+            predictiondata.append([place, sailors[0], sailors[1]] + row[1:11])
             #predictiondata.append([place, sailors[0], sailors[1], row[1], row[2], row[4], row[5], row[6]])
             place +=1
-            sailor_dict[sailors[0]] = "Skipper"
-            sailor_dict[sailors[1]] = "Crew"
-            venue_dict[row[2]] = "Fun"
+            skipper_dict[sailors[0]] = "Skipper"
+            crew_dict[sailors[1]] = "Crew"
+            venue_dict[row[3]] = "Fun"
         except: 
             print(sailors)
 
-unique_dict = {}
-sailor_array = [["id","name", "position", "year"]]
-all_keys = [x for x in sailor_dict.keys()]
+unique_dict1 = {}
+reverse_dict = {}
+skipper_array = [["id","name","position","year"]]
+
+all_keys = [x for x in skipper_dict.keys()]
 keynum = len(all_keys)
 for index in range(0, keynum):
-    unique_dict[all_keys[index]] = index
+    unique_dict1[all_keys[index]] = index
     reverse_dict[index] = all_keys[index]
 
-print(unique_dict)
-for index in range(1,len(predictiondata)):
-    for index2 in range(len(predictiondata[index])):
-        try:
-            predictiondata[index][index2] = unique_dict[predictiondata[index][index2]]
-        except:
-            print(predictiondata[index][index2])
-for index in range(0, keynum):
-    sailor_array.append([unique_dict[all_keys[index][:-4]], all_keys[index][:-4], sailor_dict[all_keys[index]], all_keys[index][-2:]])
+print(unique_dict1)
 
-venue_array = [["venue", "more"]]
+for index in range(1,len(predictiondata)):
+    try:
+        predictiondata[index][1] = unique_dict1[predictiondata[index][1]]
+    except:
+        a = 1
+
+for index in range(0, keynum):
+    key = all_keys[index][:-4]
+    try: 
+        e1 = unique_dict1[key]
+    except: 
+        e1 = unique_dict1[all_keys[index]]
+    e2 = all_keys[index][:-4]
+    e3 = skipper_dict[all_keys[index]]
+    e4 = all_keys[index][-2:]
+    skipper_array.append([e1, e2, e3, e4])
+    
+###
+startindex = len(all_keys)
+unique_dict2 = {}
+reverse_dict = {}
+crew_array = [["id","name","year"]]
+all_keys = [x for x in crew_dict.keys()]
+keynum = len(all_keys)
+for index in range(0, keynum):
+    unique_dict2[all_keys[index]] = index + startindex
+    reverse_dict[index + startindex] = all_keys[index]
+
+print(unique_dict2)
+
+for index in range(1,len(predictiondata)):
+    for index2 in range(2, len(predictiondata[index])):
+        try:
+            predictiondata[index][index2] = unique_dict2[predictiondata[index][index2]]
+        except:
+            a = 1
+
+for index in range(0, keynum):
+    key = all_keys[index][:-4]
+    try: 
+        e1 = unique_dict2[key]
+    except: 
+        e1 = unique_dict2[all_keys[index]]
+    e2 = all_keys[index][:-4]
+    e3 = crew_dict[all_keys[index]]
+    e4 = all_keys[index][-2:]
+    crew_array.append([e1, e2, e3, e4])
+
+prediction_data = []
+error = 0
+for row in racedata[1:]:
+    prediction_data += [[]]
+    for sailors in row[11:]:
+        sailors = eval(sailors)
+        try:
+            prediction_data[-1].append(unique_dict1[sailors[0]])
+            prediction_data[-1].append(unique_dict2[sailors[1]])
+        except: 
+            print(sailors)
+            print(str(error))
+            error = error + 1
+
+#print(prediction_data)
+#print(all_keys)
+
+
+venue_array = [["venue", "other"]]
 for key in venue_dict.keys():
     venue_array.append([key, venue_dict[key]])
 
@@ -54,9 +115,25 @@ with open("data/races.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(predictiondata)
 
-with open("data/sailors.csv", 'w') as racefile:
+with open("data/skippers.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
-    race_writer.writerows(sailor_array)
+    race_writer.writerows(skipper_array)
+    
+#with open("data/testrdataskipper.csv", 'w') as racefile:
+ #   race_writer = csv.writer(racefile)
+  #  race_writer.writerows(skipper_comp)
+
+#with open("data/testrdatacrew.csv", 'w') as racefile:
+#    race_writer = csv.writer(racefile)
+#    race_writer.writerows(crew_comp)
+
+with open("data/testrdata.csv", 'w') as racefile:
+    race_writer = csv.writer(racefile)
+    race_writer.writerows(prediction_data)
+    
+with open("data/crews.csv", 'w') as racefile:
+    race_writer = csv.writer(racefile)
+    race_writer.writerows(crew_array)
 
 with open("data/venues.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)

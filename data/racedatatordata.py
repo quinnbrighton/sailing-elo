@@ -59,7 +59,7 @@ with open("data/testrdata.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(predictiondata)
 
-with open("data/testrdataskipper.csv", 'w') as racefile:
+with open("data/testrdatasailor.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(sailor_array)
 
@@ -73,6 +73,6 @@ for sublist in predictiondata[1:]:
         new_array.append([element, race, ranking])
     race = race + 1
 
-with open("data/testrdata2.csv", 'w') as racefile:
+with open("data/testrdataskipper.csv", 'w') as racefile:
     race_writer = csv.writer(racefile)
     race_writer.writerows(new_array)

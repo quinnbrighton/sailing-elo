@@ -21,10 +21,14 @@ def merge_dataframes(base, *args, **kwargs):
     return base.merge(merge_dataframes(*args), **kwargs)
 
 
-df2 = load_csv('./data/testrdatasailor.csv')
+df2 = load_csv('./data/skippers.csv')
 df1 = load_csv('./data/coefsoutput2.csv')
 
-df3 = merge_dataframes(df1,df2)
+df3 = merge_dataframes(df1,df2,on='id', how='inner')
+
+#df4 = load_csv('./data/skippers.csv')
+
+#df5 = merge_dataframes(df3,df4,on='id', how='inner')
 
 df_sorted_desc = df3.sort_values(by="x", ascending=False)
 
