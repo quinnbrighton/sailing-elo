@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor Data Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 8px 0;
+            text-decoration: none;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #444;
+        }
+        .sidebar a:hover {
+            background-color: #444;
+        }
+        /* Main Content Styles */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .sailor-links {
+            margin-bottom: 20px;
+        }
+        .sailor-links a {
+            display: block;
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        #searchInput {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Sailor Directory</h2>
+        <a href="index.html">Home</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="sailors.html">Sailor List</a>
+        <!-- You can add more links as needed -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Make the Sailor Data Directory heading a clickable link -->
+        <h1><a href="index.html">Sailor Data Directory</a></h1>
+
+        <input type="text" id="searchInput" placeholder="Search sailors..." oninput="filterSailorList()">
+
+        <!-- Section for redirect links -->
+        <div class="sailor-links" id="sailorLinks">
+            <!-- Links will be added dynamically using JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        let sailorData = [];  // To store the list of sailors
+
+        // Function to fetch and display sailor links
+        async function loadRedirectData() {
+            try {
+                const response = await fetch('name_to_website.csv');
+                const data = await response.text();
+                const rows = data.split('\n').slice(1);  // Skip header row
+
+                const sailorLinksContainer = document.querySelector('#sailorLinks');
+                sailorData = [];  // Reset sailorData array
+
+                rows.forEach(row => {
+                    const [name, url] = row.split(',');
+                    if (name && url) {
+                        sailorData.push({ name: name.trim(), url: url.trim() });
+
+                        // Create a link for each sailor, pointing to sailor-info.html with their name as a query parameter
+                        const link = document.createElement('a');
+                        link.href = `sailor-info.html?name=${name.trim()}`;
+                        link.textContent = name.trim();
+                        sailorLinksContainer.appendChild(link);
+                    }
+                });
+
+                // After loading the data, filter the sailor list if the search input is not empty
+                filterSailorList();
+
+            } catch (error) {
+                console.error('Error loading redirect data:', error);
+            }
+        }
+
+        // Function to filter sailor list based on search input
+        function filterSailorList() {
+            const searchQuery = document.querySelector('#searchInput').value.toLowerCase();
+            const filteredSailors = sailorData.filter(sailor => sailor.name.toLowerCase().includes(searchQuery));
+
+            const sailorLinksContainer = document.querySelector('#sailorLinks');
+            sailorLinksContainer.innerHTML = '';  // Clear previous sailor links
+
+            filteredSailors.forEach(sailor => {
+                const link = document.createElement('a');
+                link.href = `sailor-info.html?name=${sailor.name}`;
+                link.textContent = sailor.name;
+                sailorLinksContainer.appendChild(link);
+            });
+        }
+
+        // Get the sailor name from the URL query string and load their data
+        function getSailorNameFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('name');  // Return the 'name' parameter value
+        }
+
+        // Load sailor data if there's a query string parameter
+        window.onload = function() {
+            loadRedirectData();
+            const sailorName = getSailorNameFromURL();
+            if (sailorName) {
+                loadSailorData(sailorName);
+            }
+        };
+    </script>
+</body>
+</html>

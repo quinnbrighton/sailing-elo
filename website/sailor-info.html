@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor Info</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .back-link {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sailor Details</h1>
+
+    <div class="back-link">
+        <a href="index.html">Back to Sailor Data Directory</a>
+    </div>
+
+    <div id="sailorDetails"></div>
+
+    <script>
+        // Function to fetch and display sailor data based on the name in the URL query
+        async function loadSailorData() {
+            const sailorName = getSailorNameFromURL(); // Get sailor name from URL query string
+            if (!sailorName) return;
+
+            try {
+                const response = await fetch('skipperrank.csv');
+                const csvData = await response.text();
+                const rows = csvData.split('\n').slice(1); // Skip header
+
+                // Find the row for the specific sailor by name
+                const sailorRow = rows.find(row => row.toLowerCase().includes(sailorName.toLowerCase()));
+                if (!sailorRow) {
+                    document.getElementById('sailorDetails').innerHTML = `<p>No details found for ${sailorName}.</p>`;
+                    return;
+                }
+
+                const columns = sailorRow.split(',');
+                let detailsHTML = `<table>
+                    <tr><th>ID</th><td>${columns[0]}</td></tr>
+                    <tr><th>Name</th><td>${columns[1]}</td></tr>
+                    <tr><th>Position</th><td>${columns[2]}</td></tr>
+                    <tr><th>Year</th><td>${columns[3]}</td></tr>
+                    <tr><th>Estimate</th><td>${columns[4]}</td></tr>
+                    <tr><th>Std. Error</th><td>${columns[5]}</td></tr>
+                    <tr><th>z value</th><td>${columns[6]}</td></tr>
+                    <tr><th>Pr(>|z|)</th><td>${columns[7]}</td></tr>
+                </table>`;
+
+                document.getElementById('sailorDetails').innerHTML = detailsHTML;
+
+            } catch (error) {
+                console.error('Error loading sailor data:', error);
+                document.getElementById('sailorDetails').innerHTML = `<p>Error loading data for ${sailorName}.</p>`;
+            }
+        }
+
+        // Function to get the sailor's name from the URL query string
+        function getSailorNameFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('name');  // Return the 'name' parameter value
+        }
+
+        window.onload = loadSailorData;
+    </script>
+</body>
+</html>
