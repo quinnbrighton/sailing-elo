@@ -52,7 +52,7 @@ nav input[type="text"] {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .hero img {
@@ -118,8 +118,8 @@ section h2 {
 }
 
 .competitor-card img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 50px;
 }
 
 /* Current Conditions */

@@ -16,13 +16,12 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Races</a></li>
-                <li><a href="#">Competitors</a></li>
+                <li><a href="templates/competitors.html">Competitors</a></li>
                 <li><a href="#">Venues</a></li>
                 <li><a href="#">Conditions</a></li>
                 <li><a href="#">Rankings</a></li>
                 <li><a href="#">Analysis</a></li>
             </ul>
-            <input type="text" placeholder="Search...">
         </nav>
     </header>
 
@@ -37,6 +36,19 @@
 
     <!-- Main Content Sections -->
     <main>
+        <!-- Top Competitors Section -->
+        <section class="top-skippers">
+            <h2>Top Skippers</h2>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Filter By School" id="schoolSearch" oninput="filterSkippers()">
+            </div>
+
+            <div class="competitor-cards" id="skipperContainer">
+                <!-- Skippers will be dynamically inserted here -->
+            </div>
+        </section>
+
         <!-- Recent Races Section -->
         <section class="recent-races">
             <h2>Recent Races</h2>
@@ -47,24 +59,6 @@
                     <p>Date: MM/DD/YYYY</p>
                     <p>Wind: 10 knots, NW</p>
                 </div>
-                <!-- Repeat .race-card as needed -->
-            </div>
-        </section>
-
-        <!-- Top Competitors Section -->
-        <!-- Top Competitors Section -->
-        <section class="top-skippers">
-            <h2>Top Skippers</h2>
-            <div class="competitor-cards">
-                {% for skipper in skippers %}
-                <div class="competitor-card">
-                    <img src="static/assets/burgee/{{ skipper.image_file }}" alt="{{ skipper.name }}">
-                    <h3>{{ skipper.name }}</h3>
-                    <p>Position: {{ skipper.position }}</p>
-                    <p>Year: {{ skipper.year }}</p>
-                    <p>Ranking: NA</p>
-                </div>
-                {% endfor %}
             </div>
         </section>
 
@@ -72,7 +66,6 @@
         <section class="current-conditions">
             <h2>Current Conditions</h2>
             <div class="conditions-chart">
-                <!-- Placeholder for a chart image or graph -->
                 <img src="conditions-chart.jpg" alt="Wind and Condition Chart">
             </div>
             <div class="conditions-summary">
@@ -94,6 +87,48 @@
             <p>&copy; 2024 College Sailing Data</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to filter skippers based on school name
+        function filterSkippers() {
+            const schoolName = document.getElementById('schoolSearch').value;
+
+            // Send an AJAX request to the Flask server with the school name
+            fetch(`/get_top_skippers?school_name=${schoolName}`)
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('skipperContainer');
+                    container.innerHTML = ''; // Clear previous skippers
+
+                    // If no data, show a message
+                    if (data.length === 0) {
+                        container.innerHTML = `<p>No skippers found for the school: ${schoolName}</p>`;
+                        return;
+                    }
+
+                    // Create a card for each skipper
+                    data.forEach(skipper => {
+                        const card = document.createElement('div');
+                        card.classList.add('competitor-card');
+
+                        card.innerHTML = `
+                            <img src="static/assets/burgee/${skipper['Image Token']}">
+                            <h3>${skipper.name}</h3>
+                            <p>Year: ${skipper.year}</p>
+                            <p>Ranking: ${skipper.id}</p>
+                            <p>Skipper Rating: ${skipper['Rating']}</p>
+                        `;
+                        container.appendChild(card);
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Initialize the page by loading all skippers
+        document.addEventListener('DOMContentLoaded', filterSkippers);
+    </script>
+
 </body>
 
 </html>
